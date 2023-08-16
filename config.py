@@ -3,16 +3,16 @@ import re
 
 id_pattern = re.compile(r'^.\d+$')
 # get a token from @BotFather
-TOKEN = os.environ.get("TOKEN", "6200317574:AAG0LryOyLhEdiRuH2oRRTUxfbG2wITUoHA")
+TOKEN = os.environ.get("TOKEN", "6087333035:AAHGvrcKTWAp_wFFlTFBwO-nZqg9jAuEHjo")
 # The Telegram API things
-APP_ID = int(os.environ.get("APP_ID", "19455849"))
-API_HASH = os.environ.get("API_HASH", "71498d69fad014add7e9f717bfde4b79")
+APP_ID = int(os.environ.get("APP_ID", "28900444"))
+API_HASH = os.environ.get("API_HASH", "7343be63958388e1d88c2961efe5a9e6")
 #Array to store users who are authorized to use the bot
 ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '905710386').split()]
 #Your Mongo DB Database Name
 DB_NAME = os.environ.get("DB_NAME", "mongodb765")
 #Your Mongo DB URL Obtained From mongodb.com
-DB_URL = os.environ.get("DB_URL", "mongodb+srv://Lovely:Lovely@cluster0.fsid0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+DB_URL = os.environ.get("DB_URL", "mongodb+srv://adityastram:6JOkHSVslwx7Q65Z@cluster0.j2nd3xy.mongodb.net")
 
 START_PIC = (os.environ.get("START_PIC", "https://telegra.ph/file/0e3738d56ff92e363a1d9.jpg https://telegra.ph/file/a52e97c3371d6197e7723.jpg https://telegra.ph/file/da8e1ab9f84ba60494451.jpg https://telegra.ph/file/cfa28e7e2fe19adc9688c.jpg https://telegra.ph/file/be339f05202e87a05515c.jpg https://telegra.ph/file/45c1e617e959edc7f3aee.jpg https://telegra.ph/file/f0e48c64e7ee4ee304407.jpg https://telegra.ph/file/ac16ec543b2fb84be97d2.jpg https://telegra.ph/file/4f1303bf89fd84843f172.jpg")).split()
 
